@@ -1,0 +1,20 @@
+---
+const {image, body} = Astro.props;
+// const {body}.    = Astro.props;
+---
+
+<li class="flex flex-col items-center p-4 rounded-xl shadow">
+    <div class="image__wrapper mb-3">
+        <img src={image} alt="">
+    </div>
+    <div class="text__wrapper">
+        <p class="text-lg">{body}</p>
+    </div>
+</li>
+
+<style>
+    li{
+        border: 1px solid #E0E0E0;
+        flex-basis: 30%;
+    }
+</style>
